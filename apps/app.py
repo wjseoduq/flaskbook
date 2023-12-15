@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from flask import Flask
 from pathlib import Path
 from flask_migrate import Migrate
@@ -17,12 +19,12 @@ def create_app():
     app = Flask(__name__)
 
     app.config.from_mapping(
-        SECRET_KEY="googleCloudPlatform",
+        SECRET_KEY="googleCloudPlatformwe",
         SQLALCHEMY_DATABASE_URI=
         f"sqlite:///{Path(__file__).parent.parent / 'local.sqlite'}",
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
         SQLALCHEMY_ECHO=True, 
-        WTF_CSRF_SECRET_KEY="sadasdsdasde32324dfg",
+        WTF_CSRF_SECRET_KEY="sadasdswewedasde32324dfg",
     )
 
     # SQLAlchemy와 앱을 연결
